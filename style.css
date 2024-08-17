@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.nav-container {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.img-main-logo {
+  width: 217px;
+  height: 65px;
+}
+.menu-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.firt-menu ul {
+  width: auto;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.help-img-container {
+  width: 375px;
+  height: 50px;
+}
+.item-menu {
+  margin-right: 20px;
+}
+
+.navbar-container {
+  width: auto;
+  height: 50px;
+  background: #002749;
+  display: flex;
+  align-items: center;
+}
+
+.list-navbar-menu {
+  width: 1170px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: #002749;
+}
+.list-navbar-menu-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: #002749;
+  gap: 5px;
+}
+#search:hover,
+.list-navbar-menu-item:hover {
+  height: 100%;
+  cursor: pointer;
+  background: #cb286e !important;
+  transition: 0.1s ease;
+}
+
+.list-navbar-menu-item-typography,
+.list-navbar-menu-item i {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+}
+
+.accueil-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: white;
+}
+.accueil-box {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.accueil-box p {
+  font-size: 11px;
+  color: grey;
+}
+.menu-direction {
+  font-size: 11px;
+  color: grey;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.carrousel-container {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://s3-eu-west-1.b-cdn.net/jt-resources/userfiles/jt/images/homepage/slideshow/Background/JT-NL-Banniere-EBBhiver-2024.webp");
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  /* filter: blur(2px); Applique un flou de 5 pixels */
+}
+
+.carrousel-navbar-list {
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 1170px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); /* Ombre plus marquée */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel-navbar-item {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background: transparent;
+  border-right: 1px dotted grey;
+}
+
+.carrousel-navbar-item a {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 8px;
+}
+#search {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #cb286e;
+}
+#search p:hover {
+  color: white !important;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #cb286e;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.carrousel-navbar-list li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+#search-typography,
+#search-icon {
+  background: transparent;
+  color: white;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+.carrousel-dotted {
+  height: 10px;
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+
+.round {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.round:hover {
+  background-color: #002749;
+  transition: 0.1s ease;
+}
+
+.title-container {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.title-container h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #cb286e;
+}
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.duo-container,
+.card-pepite {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 1170px;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.card-pepite::after {
+  content: "Découvrir >";
+  position: absolute;
+  color: white;
+  width: 100px;
+  height: 30px;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #cb286e;
+  transition: width 0.3s ease, left 0.3s ease;
+  display: none;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-pepite:hover::after {
+  display: block;
+  z-index: 1000;
+  transition: 0.2s ease;
+}
+
+.duo-container img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.duo-container img:hover {
+  background-color: #00274977;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  filter: brightness(0.3);
+}
+
+.promo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: #002749a4 !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.country {
+  background: transparent !important;
+  color: white;
+  padding: 5px;
+}
+.country p {
+  background: transparent !important;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.country-description {
+  font-size: 12px !important;
+  text-transform: lowercase !important;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: transparent;
+}
+.price p {
+  background: transparent;
+  color: white;
+  text-transform: lowercase;
+  font-size: 12px;
+  padding-right: 5px;
+}
+.price-bold {
+  font-size: 26px !important ;
+  font-weight: bold;
+}
+
+.btn-bon-plan {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-bon-plan button {
+  background-color: #cb286e;
+  border: none;
+  height: 40px;
+  width: 250px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+}
+.best-sells {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+.card-global-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
