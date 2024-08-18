@@ -499,8 +499,128 @@ li::after {
 }
 
 .club-world p {
-  font-size: 13px;
+  font-size: 15px;
   max-width: 950px;
   color: rgb(87, 86, 86);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/**SECTION CLUB **/
+
+.club {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.club-container {
+  width: 1170px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-logo-club {
+  position: absolute;
+  background: transparent;
+  width: 200px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  padding-top: 5px;
+  z-index: 100;
+}
+.img-logo-club-bkg {
+  border-radius: 15px;
+}
+.card-club {
+  position: relative;
+  margin: 5px;
+  cursor: pointer;
+}
+.position-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+}
+.text-club-hover {
+  background: transparent;
+  color: white;
+  margin-top: 25%;
+  text-align: center;
+}
+.card-club-discover {
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fa-chevron-right {
+  color: white;
+  background: transparent;
+  padding-left: 5px;
+}
+
+.position-absolute:hover {
+  opacity: 0.8;
+}
+
+.voyager {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.voyager-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.voyager-container h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #cb286e;
+  background: transparent;
+}
+
+.voyager-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.voyager-container strong {
+  margin-bottom: 20px;
+  color: #002749;
+  font-size: 20px;
+}
+
+.voyager-container p {
+  margin-bottom: 15px;
+  color: #002749;
+  font-size: 15px;
   text-align: center;
 }
