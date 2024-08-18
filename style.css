@@ -129,7 +129,7 @@ a {
   border-radius: 10px;
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 50%;
   transform: translate(-50%, -50%);
   height: 70px;
   width: 1170px;
@@ -208,7 +208,7 @@ li::after {
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 62%;
+  top: 60%;
   transform: translate(-50%, -50%);
   background: transparent;
 }
@@ -365,6 +365,7 @@ li::after {
 }
 .best-sells {
   height: 100%;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -378,4 +379,128 @@ li::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: transparent;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #cb286e;
+  background: transparent;
+}
+/****** CARD ITEM */
+.card-global-container {
+  width: 1170px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.mini-card-container {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5); /* Ombre plus marquée */
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mini-card-container img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content-title,
+.card-content-title-hotel-name,
+.card-content-location {
+  color: #002749;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.card-content-location {
+  font-size: 12px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  color: rgb(87, 86, 86);
+  font-weight: 800;
+}
+
+.card-duration-vacation {
+  font-size: 11px;
+  color: rgb(87, 86, 86);
+  padding-left: 5px;
+}
+
+.card-content-price {
+  margin-top: 5px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 35px;
+  padding-left: 5px;
+}
+.start-price {
+  font-size: 11px;
+  color: #002749;
+}
+
+.card-content-price-total {
+  font-weight: bold;
+  font-size: 26px;
+  transform: translateY(5px);
+  color: #002749;
+}
+
+.card-btn {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-btn button {
+  border-radius: 8px;
+  width: 150px;
+  height: 30px;
+  background-color: #cb286e;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-btn button:hover {
+  filter: brightness(0.8);
+}
+
+.club-world {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.club-world h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #cb286e;
+  background: transparent;
+}
+
+.club-world p {
+  font-size: 13px;
+  max-width: 950px;
+  color: rgb(87, 86, 86);
+  text-align: center;
 }
